@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="section-header" id="section-header">
+          <div class="header-title">
+            <span>calc</span>
+          </div>
+          <div class="header-toggles">
+            <div class="toggles-space-1">
+            </div>
+            <div class="toggles-space-2">
+              <span>THEME</span>
+            </div>
+            <div class="toggles-space-3">
+              <div class="toggles-numbers">
+                <span>1</span>
+                <span style="padding-left: 2px;">2</span>
+                <span style="padding-left: px;">3</span>
+              </div>
+              <div class="toggles-holder" id="toggles-holder"">
+                <button class="toggle-button" id="btn_1"></button>
+                <button class="toggle-button" id="btn_2"></button>
+                <button class="toggle-button" id="btn_3"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-input">
+          <input type="text" id="input-box">
+        </div>
+        <div class="section-buttons" id = "section-buttons">
+          <div class="container-buttons">
+            <input type="button" class="number-button" id="7" value="7" onclick="getNumber(7)"></input>
+            <input type="button" class="number-button" id="8" value="8" onclick="getNumber(8)"></input>
+            <input type="button" class="number-button" id="9" value="9" onclick="getNumber(9)"></input>
+            <input type="button" class="number-button" id="del" value="Del" onclick="undo()"></input>
+            <input type="button" class="number-button" id="4" value="4" onclick="getNumber(4)"></input>
+            <input type="button" class="number-button" id="5" value="5" onclick="getNumber(5)"></input>
+            <input type="button" class="number-button" id="6" value="6" onclick="getNumber(6)"></input>
+            <input type="button" class="number-button" id="plus" value="+" onclick="getNumber('+')"></input>
+            <input type="button" class="number-button" id="1" value="1" onclick="getNumber(1)"></input>
+            <input type="button" class="number-button" id="2" value="2" onclick="getNumber(2)"></input>
+            <input type="button" class="number-button" id="3" value="3" onclick="getNumber(3)"></input>
+            <input type="button" class="number-button" id="minus" value="-" onclick="getNumber('-')"></input>
+            <input type="button" class="number-button" id="point" value="." onclick="getNumber('.')"></input>
+            <input type="button" class="number-button" id="0" value="0" onclick="getNumber(0)"></input>
+            <input type="button" class="number-button" id="division" value="/" onclick="getNumber('/')"></input>
+            <input type="button" class="number-button" id="mult" value="x" onclick="getNumber('*')"></input>
+            <input type="button" class="operation-button-reset" id="reset" value="RESET" onclick="clearDisplay()"></input>
+            <input type="button" class="operation-button-equal" id="equal" value="=" onclick="solve()"></input>
+         </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+    <script src="./styles.js"></script>
+  </body>
+  <!-- <footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tatiaarc</a>.
+    </div>
+  </footer> -->
+</html>
